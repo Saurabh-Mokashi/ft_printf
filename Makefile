@@ -6,11 +6,11 @@
 #    By: smokashi <smokashi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 13:29:50 by smokashi          #+#    #+#              #
-#    Updated: 2022/06/01 14:49:13 by smokashi         ###   ########.fr        #
+#    Updated: 2022/06/02 15:04:24 by smokashi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_printf.c ft_utils.c
+SRCS = ft_printf.c ft_utils.c ft_p.c ft_hex.c ft_putnbru.c
 
 
 OBJS = ${SRCS:.c=.o}

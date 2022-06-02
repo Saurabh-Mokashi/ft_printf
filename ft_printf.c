@@ -6,7 +6,7 @@
 /*   By: smokashi <smokashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 16:21:13 by smokashi          #+#    #+#             */
-/*   Updated: 2022/06/01 19:18:24 by smokashi         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:35:26 by smokashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_getform(va_list ptr, char c)
 	else if (c == 'u')
 		len += ft_putnbru(va_arg(ptr, unsigned int));
 	else if (c == 'x')
-		len += ft_hexlower(va_arg(ptr, int));
+		len += ft_hexlower(va_arg(ptr, unsigned int));
 	else if (c == 'X')
-		len += ft_hexhigher(va_arg(ptr, int));
+		len += ft_hexhigher(va_arg(ptr, unsigned int));
 	else if (c == '%')
 		len += ft_percent();
 	else
@@ -66,13 +66,11 @@ int	ft_printf(const char *format, ...)
 }
 // int main()
 // {
-// 	// int len = ft_printf("%s","");
-// 	// printf((" NULL %s NULL ", NULL);
-// 	// len = ft_printf("%s","");
-// 	// printf("\n%d",len);
-// 	int len = printf("%p", 15);
-// 	printf("%d\n",len);
-// 	len = ft_printf("%p", 15);
-// 	printf("%d",len);
+// 	int len=printf("%c %s %p %d %i %u %x %X",'q',"hello world",899999998888889898,214748365656,2147483656565656,111111101010110101010,-55,-55);
+// 	printf("\nlen is %d",len);
+// 	len = ft_printf("%c %s %p %d %i %u %x %X",'q',"hello world",899999998888889898,214748365656,2147483656565656,111111101010110101010,-55,-55);
+// 	printf("\nlen is %d",len);
+// // printf("%x",4294967299);
+// // ft_printf("\n%x",4294967299);
 // 	return (0);
 // }
